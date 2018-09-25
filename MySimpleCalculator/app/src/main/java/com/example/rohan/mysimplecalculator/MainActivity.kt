@@ -13,27 +13,27 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun sum(view:View){
-        val a = number1.text.toString().toInt()
-        val b = number2.text.toString().toInt()
+        val a = number1.text.toString().toFloat()
+        val b = number2.text.toString().toFloat()
         val result = a+b
         resultView.text = "Result : $result"
     }
     fun divide(view:View){
-        val a = number1.text.toString().toInt()
-        val b = number2.text.toString().toInt()
+        val a = number1.text.toString().toFloat()
+        val b = number2.text.toString().toFloat()
         val result = a/b
         resultView.text = "Result : $result"
     }
     fun multiply(view:View){
-        val a = number1.text.toString().toInt()
-        val b = number2.text.toString().toInt()
+        val a = number1.text.toString().toFloat()
+        val b = number2.text.toString().toFloat()
         val result = a*b
         resultView.text = "Result : $result"
 
     }
     fun subtract(view:View){
-        val a = number1.text.toString().toInt()
-        val b = number2.text.toString().toInt()
+        val a = number1.text.toString().toFloat()
+        val b = number2.text.toString().toFloat()
         val result = a-b
         resultView.text = "Result : $result"
     }

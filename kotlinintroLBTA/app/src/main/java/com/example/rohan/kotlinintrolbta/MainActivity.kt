@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
     fun mySimpsons(view: View){
         val name = nameInput.text.toString()
 
-        if (!ageInput.text.toString().equals("")){
+        if (!ageInput.text.toString().equals("") ){
             age  = ageInput.text.toString().toInt()
         }
         val job  = jobInput.text.toString()
