@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".note1">
+
+    <EditText
+        android:id="@+id/note1Text"
+        android:layout_width="346dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginBottom="159dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Write note here."
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="146dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="76dp"
+        android:onClick="save"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/note1Text" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="142dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="220dp"
+        android:onClick="back"
+        android:text="BACK"
+        app:layout_constraintBottom_toBottomOf="@+id/save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/save"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="176dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="38dp"
+        android:onClick="home"
+        android:text="Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/note1Text" />
+
+</android.support.constraint.ConstraintLayout>
